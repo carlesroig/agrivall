@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agrivall - Historia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/casilla.css" />
+    <script src="../js/casilla.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html">
+            <div>
+                <img src="../images/agrivall2Fondo.png" alt="logo agrivall" />
+                <p>Agrivall</p>
+            </div>
+        </a>
+        <div>
+            <nav>
+                <a href="./historia.html" id="histora">Historia</a>
+                <a href="./productos.html" id="productos">Productos</a>
+                <a href="./casilla.html" id="casilla">La Casilla</a>
+                <a href="./noticias.html" id="noticias">Noticias</a>
+                <a href="./contacto.html" id="contacto">Contacto</a>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+            </nav>
+            <div>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1 class="titulo">La Casilla</h1>
+
+        <section id="descripcion" class="descripcion">
+            <h2>Descripción General</h2>
+            <img src="../images/casilla.jpg" id="carrusel">
+            <div class="desc">
+                <p>La Casilla fue un antiguo hostal que regentaban mis abuelos y tío abuelos. En la Guerra Civil tuvieron que cerrarlo y trasladarse a vivir al casco urbano de Alpatró. Allí construyeron sus casas con materiales reciclados del hostal, quedando éste prácticamente en ruinas. De ahí que a Vicente y Joaquín, abuelo y tío abuelo de Javier, se les conociera con el apodo de Els Cases Noves.</p> 
+                    
+                <p>Hoy en día, el hostal sigue en pie y en buen estado, ahora como casa rural, y la parcela sigue estando arraigada a la familia, donde cada año la primavera la viste de blanco para unos meses después cambiar su tonalidad a rojos intensos, los rojos de las cerezas del Valle de la Gallinera.</p>
+
+                <ul>
+                    <li><i class="fa-solid fa-bed"></i> 3 Habitaciones Dobles.</li>
+                    <li><i class="fa-solid fa-bath"></i> 2 Baños</li>
+                    <li><i class="fa-solid fa-car"></i> 2 Plazas de Parking.</li>
+                </ul>
+
+                <div class="precios">
+                    <h3>Listado de Precios</h3>
+                    <table class="tabla-precios">
+                        <thead>
+                            <tr>
+                                <th class="bordes-izquierda">Noches</th>
+                                <th class="bordes-derecha">Precio (€)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1 Noche</td>
+                                <td class="precio">100€</td>
+                            </tr>
+                            <tr>
+                                <td>2 Noches</td>
+                                <td class="precio">180€</td>
+                            </tr>
+                            <tr>
+                                <td>3 Noches</td>
+                                <td class="precio">250€</td>
+                            </tr>
+                            <tr>
+                                <td>4 Noches</td>
+                                <td class="precio">320€</td>
+                            </tr>
+                            <tr>
+                                <td>5 Noches</td>
+                                <td class="precio">390€</td>
+                            </tr>
+                            <tr>
+                                <td>6 Noches</td>
+                                <td class="precio">450€</td>
+                            </tr>
+                            <tr>
+                                <td>7 Noches</td>
+                                <td class="precio">500€</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="reserva" class="reserva">
+            <h2 class="titulo">Reserva de la casilla</h2>
+            <p> Introduce en el formulario el dia que quieras reservar entre los disponibles </p>
+            <iframe src="https://calendar.google.com/calendar/embed?src=aa932f512984c89fcae9489804e30b798acfbc8cbc4b2b52798a7810fbe82139%40group.calendar.google.com&ctz=UTC" class="calendario" frameborder="0" scrolling="no"></iframe>
+           
+            <div class="form">
+                <h4>Formulario de reserva</h4>
+                <div class="form-container">
+                    <form>
+                        <div class="input-group">
+                            <label for="nombre"><i class="fa-solid fa-user"></i> Nombre</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+            
+                        <div class="input-group">
+                            <label for="tel"><i class="fa-solid fa-phone"></i> Teléfono</label>
+                            <input type="tel" id="tel" name="tel" required>
+                        </div>
+            
+                        <div class="input-group">
+                            <label for="pers"><i class="fa-solid fa-users"></i> Personas</label>
+                            <input type="number" id="pers" name="pers" required>
+                        </div>
+            
+                        <div class="input-group">
+                            <label><i class="fa-solid fa-calendar"></i> Fecha de entrada</label>
+                            <input type="date" id="fecha-entrada" name="fecha-entrada" required>
+                        </div>
+            
+                        <div class="input-group">
+                            <label><i class="fa-solid fa-calendar"></i> Fecha de salida</label>
+                            <input type="date" id="fecha-salida" name="fecha-salida" required>
+                        </div>
+            
+                        <div class="input-group">
+                            <label for="mensaje"><i class="fa-solid fa-comment"></i> Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                        </div>
+            
+                        <button type="submit" class="btn">Enviar Reserva</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <img src="../images/agrivall2Fondo.png" alt="logo agrivall" />
+        <p>© 2025 Agrivall.</p>
+        <div>
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>

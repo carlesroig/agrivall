@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@keyframes cambiarFondo {
+    0%, 20%, 100% { opacity: 1; background-image: url(../images/casilla.jpg); }
+    25%, 40% { opacity: 1; background-image: url(../images/fachada.jpg); }
+    45%, 60% { opacity: 1; background-image: url(../images/103092086.jpg); }
+    65%, 80% { opacity: 1; background-image: url(../images/367231749.jpg); }
+    85%, 95% { opacity: 1; background-image: url(../images/447046025.jpg); }
+}
+
+/* 0%, 19% { background-image: url(../images/casilla.jpg); }
+    20%, 39% { background-image: url(../images/103092004.jpg); }
+    40% { background-image: url(../images/103092086.jpg); }
+    60% { background-image: url(../images/367231749.jpg); }
+    80% { background-image: url(../images/447046025.jpg); }
+    100% { background-image: url(../images/fachada.jpg); } */
+
+*{ 
+    margin: 0; padding: 0; 
+    box-sizing: border-box;
+    text-decoration: none; 
+}
+
+:root{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+main{
+    background-color: #FFF8E1;
+    flex: 1;
+}
+
+main > h1{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    padding: 2rem 2rem 1rem 2rem;
+    text-align: center;
+}
+
+main section.descripcion{
+    padding: 20px 15px;
+}
+
+main section.descripcion > img{
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 3/2;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transition: opacity 0.5s ease;
+}
+
+main section.descripcion > div.desc{
+        display: flex;
+        flex-flow: column;
+        gap: 1rem;
+}
+
+main section.descripcion ul {
+    margin-left: 1rem;
+    list-style: none;
+    line-height: 2rem;
+}
+
+main section.descripcion > div.desc div.precios table.tabla-precios {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-color: #FFF8E1;
+}
+
+main section.descripcion > div.desc div.precios table.tabla-precios th, 
+main section.descripcion > div.desc div.precios table.tabla-precios td {
+    padding: 10px;
+    text-align: center;
+}
+
+main section.descripcion > div.desc div.precios table.tabla-precios th {
+    color: white;
+    font-weight: bold;
+}
+main section.descripcion > div.desc div.precios table.tabla-precios thead{
+    background-color: #D32F2F;
+    border-radius: 8px 8px 0 0;
+}
+
+main section.descripcion > div.desc div.precios table.tabla-precios .precio {
+    font-weight: bold;
+    color: #6A994E;
+}
+
+main section.descripcion > div.desc div.precios table.tabla-precios .bordes-izquierda {
+    border-top-left-radius: 8px;
+}
+main section.descripcion > div.desc div.precios table.tabla-precios .bordes-derecha {
+    border-top-right-radius: 8px;
+}
+
+main section.reserva{
+    padding: 20px 15px;
+    background-color: #E1E1E1;
+}
+
+main section.reserva img{
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 3/2;
+    margin-top: 20px;
+    object-fit: cover;
+}
+
+main section.form {
+    padding: 20px 0;
+}
+
+main div.form div.form-container {
+    margin-top: 1rem;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main section.reserva div.form {
+    margin-top: 2rem;
+}
+
+main section.reserva div.form  div.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+main section.reserva div.form  div.input-group label {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+main section.reserva div.form  div.input-group label i {
+    margin-right: 8px;
+    color: #555;
+}
+
+main section.reserva div.form  div.input-group input, 
+main section.reserva div.form  div.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+main section.reserva div.form  div.input-group textarea{
+    min-width: 100%;
+    max-width: 100%;
+}
+
+main section.reserva div.form button.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #D32F2F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+main section.reserva div.form button.btn:hover {
+    background-color: #6A994E;
+}
+
+
+
+.calendario {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 3/2;
+    margin-top: 20px;
+    object-fit: cover;
+}

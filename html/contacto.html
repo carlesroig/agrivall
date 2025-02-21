@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrivall - Contacto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+<body>
+    <header>
+        <a href="./index.html">
+            <div>
+                <img src="../images/agrivall2Fondo.png" alt="logo agrivall">
+                <p>Agrivall</p>
+            </div>
+        </a>
+        <div>
+            <nav>
+                <a href="./historia.html">Historia</a>
+                <a href="./productos.html">Productos</a>
+                <a href="./casilla.html">La Casilla</a>
+                <a href="./noticias.html">Noticias</a>
+                <a href="./contacto.html">Contacto</a>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+            </nav>
+            <div>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1 class="titulo">Contacto</h1>
+        <section class="datos">
+
+            <div id="dirIco" class="icon">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div id="dirTex">
+                <p class="subtitle">Dirección</p>
+                <p><a href="https://maps.app.goo.gl/1kqUdM2GCtRgZ4p38" target="_blank">Carretera de Valencia, km 5</a></p>
+                <p><a href="https://maps.app.goo.gl/1kqUdM2GCtRgZ4p38" target="_blank">03788 Alpatró, La Vall de Gallinera (Alacant)</a></p>
+            </div>
+
+
+            <div class="telIco icon">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="telTex">
+                <p class="subtitle">Teléfono</p>
+                <p><a href="tel:+34963123456">+34 963 123 456</a></p>
+            </div>
+
+            <div class="emaIco icon">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="emaTex">
+                <p class="subtitle">Email</p>
+                <p><a href="mailto:info@agrivall.com">info@agrivall.com</a></p>
+            </div>
+
+        </section>
+
+        <section class="mapa">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232.5044478495715!2d-0.2822774273400512!3d38.8134512426176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61f36ef0312393%3A0x2fb3ab65d6248f73!2sLa%20Casilla.%20AGRIVALL!5e1!3m2!1ses!2ses!4v1738914581915!5m2!1ses!2ses" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+        <section class="form">
+            <h2>Envíanos un mensaje o sugerencia</h2>
+            <div class="form-container">
+                <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="tel">Teléfono</label>
+                    <input type="tel" id="tel" name="tel" required>
+                    
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    
+                    <button type="submit" class="btn">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <img src="../images/agrivall2Fondo.png" alt="logo agrivall">
+        <p> © 2025 Agrivall. </p>
+        <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+        </div>
+    </footer>
+</body>
+</html>

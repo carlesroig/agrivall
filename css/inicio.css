@@ -1,0 +1,333 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{ 
+    margin: 0; padding: 0; 
+    box-sizing: border-box;
+    text-decoration: none; 
+}
+
+:root{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.btn{
+    font-family: 'Montserrat';
+}
+
+.titulo{
+    font-family: 'Poppins';
+}
+
+main div.hero{
+    height: 25rem;
+    background-image: url("../images/tomates.jpg");
+    align-content: center;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+main div.hero div.texto{
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px 0;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+main div.hero div.texto h1{
+    font-size: 2rem;
+    padding: 0 2rem;
+}
+
+main div.hero div.texto a{
+    width: fit-content;
+    align-self: center;
+}
+
+main div.hero div.texto p.btn{
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #D32F2F;
+    width: fit-content;
+    justify-self: center;
+    color: white;
+    transition: all 0.3s;
+}
+
+main div.hero div.texto p.btn:hover{
+    background-color: #6A994E;
+}
+
+main section h2{
+    padding-top: 10px;
+}
+
+main section.productos{
+    background-color: #6A994E;
+    padding: 20px 15px;
+}
+
+main section.productos h2{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+main section.productos div.product-card{
+    text-align: justify;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+main section.productos div.product-card:hover{
+    transform: scale(1.02);
+}
+
+main section.productos div#producto2{
+    display: none;
+}
+
+main section.productos div#producto3{
+    display: none;
+}
+
+main section img{
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+
+main section.productos h3{
+    text-align: left;
+    display: none;
+}
+
+main section.productos div p{
+    text-align: justify;
+    display: none;
+}
+
+main section p.btn{
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #D32F2F;
+    justify-self: center;
+    color: white;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+main section p.btn:hover{
+    background-color: #8D6E63;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.30);
+}
+
+main section.casilla{
+    background-color: #E1E1E1;
+    padding: 20px 15px;
+}
+
+main section.casilla img{
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 3/2;
+    margin-top: 20px;
+    object-fit: cover;
+}
+
+main section.casilla>p{
+    color: #525252;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+main section.publi{
+    background-color: #FFF8E1;
+    padding: 20px 15px;
+}
+
+main section.publi div.post-card{
+    text-align: justify;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.30);
+    transition: all 0.3s;
+}
+
+main section.publi div.post-card:hover{
+    transform: scale(1.02);
+}
+
+main section.publi div.post-card h3{
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+main section.publi div.post-card p{
+    color: #525252;
+    margin-top: 0.5rem;
+}
+
+@media (width >= 768px) {
+
+    main div.hero{
+        height: 30rem;
+        background-image: url('../images/tomates.jpg');
+        background-size: cover;
+        background-position-y: top;
+    }
+
+    main div.hero div.texto{
+        height: 30rem;
+        justify-content: center;
+    }
+
+    main section.productos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "ptit ptit ptit"
+            "prod1 prod2 prod3"
+            ". pbtn .";
+        padding: 2rem 10%;
+    }
+
+    section.productos > h2{
+        grid-area: ptit;
+    }
+
+    main section.productos > div#producto1{
+        grid-area: prod1;
+    }
+
+    main section.productos > div#producto2{
+        grid-area: prod2;
+        display: block;
+    }
+
+    main section.productos > div#producto3{
+        grid-area: prod3;
+        display: block;
+    }
+
+    section.productos > a{
+        grid-area: pbtn;
+    }
+
+    main section.productos div.product-card{
+        background-color: white;
+        padding: 1rem;
+        margin: 2rem 5%;
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.30);
+    }
+
+    main section.productos h3{
+        display: block;
+    }
+
+    main section.productos div p{
+        display: block;
+    }
+
+    main section.casilla{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-areas: 
+            "cimg ctit"
+            "cimg ctext"
+            "cimg cbtn";
+        padding: 2rem 10%;
+        column-gap: 2rem;
+    }
+
+    main section.casilla > *{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    main section.casilla img{
+        grid-area: cimg;
+        margin-top: 0;
+        border-radius: 8px;
+    }
+
+    main section.casilla>p{
+        grid-area: ctext;
+    }
+
+    main section.casilla>h2{
+        grid-area: ctit;
+    }
+
+    main section.casilla>a{
+        grid-area: cbtn;
+        height: fit-content;
+        align-self: end;
+        width: fit-content;
+        justify-self: right;
+    }
+
+    main section.publi{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "putit putit"
+            "blog1 blog2";
+        padding: 2rem 10%;
+    }
+
+    main section.publi > h2{
+        grid-area: putit;
+        text-align: center;
+    }
+
+    main section.publi div.post-card{
+        background-color: white;
+        margin: 2rem 5%;
+        padding: 0;
+    }
+
+    main section.publi div.post-card h3{
+        padding: 0 1rem;
+    }
+
+    main section.publi div.post-card img{
+        border-radius: 8px 8px 0 0;
+    }
+
+    main section.publi div.post-card p{
+        padding: 0 0 1rem 1rem;
+    }
+
+
+    main section.publi div.post-card#blog1{
+        grid-area: blog1;
+    }
+
+    main section.publi div.post-card#blog2{
+        grid-area: blog2;
+    }
+
+
+    main section.publi div.post-card p{
+        color: #525252;
+        margin-top: 0.5rem;
+    }
+
+}

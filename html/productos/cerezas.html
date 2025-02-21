@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrivall - Cerezas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../css/inicio.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/producto.css">
+</head>
+
+<body>
+    <header>
+        <a href="./../index.html">
+            <div>
+                <img src="../../images/agrivall2Fondo.png" alt="logo agrivall">
+                <p>Agrivall</p>
+            </div>
+        </a>
+        <div>
+            <nav>
+                <a href="./../historia.html">Historia</a>
+                <a href="./../productos.html">Productos</a>
+                <a href="./../casilla.html">La Casilla</a>
+                <a href="./../noticias.html">Noticias</a>
+                <a href="./../contacto.html">Contacto</a>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+            </nav>
+            <div>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="producto">
+            <h1>Cerezas</h1>
+            <div class="imagenProducto">
+                <img src="../../images/cereza.jpg" alt="Imagen del Producto">
+            </div>
+            <div class="detallesProducto">
+
+                <p class="producto-rating">4.8/5 <i class="fa-solid fa-star"></i> (102 Reseñas)</p>
+                <form action="">
+                    <div class="producto-opciones">
+
+                        <label for="variedad"> Variedad </label>
+                        <select id="variedad">
+                            <option> Early Lory </option>
+                            <option> Burlat </option>
+                            <option> Prime Geant </option>
+                            <option> Garnet </option>
+                            <option> New Star </option>
+                            <option> Van </option>
+                        </select>
+
+                        <label for="formato">Formato de compra</label>
+                        <select id="formato">
+                            <option>Caja 2Kg (6,00 €)</option>
+                            <option>Caja 5Kg (15,00 €)</option>
+                            <option>Caja 10Kg (30,00 €)</option>
+                        </select>
+                    </div>
+                    <p class="producto-precio">3,00 €/Kg</p>
+                    <button type="submit"> Añadir al carrito </button>
+                </form>
+
+            </div>
+        </section>
+
+        <section class="producto-descripcion">
+            <h3>Descripción del Producto</h3>
+            <p>Disfruta de nuestras cerezas ecológicas, cultivadas con un equilibrio perfecto entre secano y riego
+                deficitario, lo que potencia su dulzura y firmeza natural.</p>
+            <p>Recolectamos nuestras cerezas desde la última semana de abril hasta mediados de junio, garantizando
+                frescura y sabor excepcional en cada variedad.</p>
+            <p> Nuestras cerezas crecen con un bajo aporte de abonos nitrogenados, resaltando su dulzura y textura firme
+                de forma natural.</p>
+            <ul>
+                <li>Textura firme y crujiente</li>
+                <li>Sabor dulce e intenso</li>
+                <li>Cultivo ecológico y sostenible</li>
+                <li>Sin residuos ni tratamientos químicos</li>
+                <li>Recolección en su punto óptimo de maduración</li>
+            </ul>
+        </section>
+
+        <section class="producto-valoracion">
+            <h3>Valora el Producto</h3>
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+
+                <label>Valoración</label>
+                <div class="rating">
+                    <input type="radio" id="estrella5" name="valoracion" value="5"><label for="estrella5"><i
+                            class="fa-solid fa-star"></i></label>
+                    <input type="radio" id="estrella4" name="valoracion" value="4"><label for="estrella4"><i
+                            class="fa-solid fa-star"></i></label>
+                    <input type="radio" id="estrella3" name="valoracion" value="3"><label for="estrella3"><i
+                            class="fa-solid fa-star"></i></label>
+                    <input type="radio" id="estrella2" name="valoracion" value="2"><label for="estrella2"><i
+                            class="fa-solid fa-star"></i></label>
+                    <input type="radio" id="estrella1" name="valoracion" value="1"><label for="estrella1"><i
+                            class="fa-solid fa-star"></i></label>
+                </div>
+
+                <label for="comentario">Comentario adicional</label>
+                <textarea id="comentario" rows="3"></textarea>
+
+                <button class="btn">Enviar valoración</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <img src="../../images/agrivall2Fondo.svg" alt="logo agrivall">
+        <p> © 2025 Agrivall. </p>
+        <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+        </div>
+    </footer>
+</body>
+
+</html>

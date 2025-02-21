@@ -1,0 +1,29 @@
+footer{
+    background-color: #8D6E63;
+    padding: 1rem;
+    text-align: center;
+    gap: 1.5rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+footer img{
+    width: 40px;
+    height: 40px;
+}
+
+footer div{
+    display: flex;
+    gap: 1rem;
+}
+
+footer div a{
+    color: white;
+}
+
+@media (min-width: 768px) {   
+
+}
