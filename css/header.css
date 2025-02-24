@@ -35,10 +35,11 @@ header > div.nav-og > div:hover {
     color: #D32F2F;
 }
 
-header > div.nav-mobil {
+/* header > div.nav-mobil {
     display: none;
     flex-direction: column;
     position: absolute;
+    width: 100%;
     top: 60px;
     right: 0px;
     background-color: #6A994E;
@@ -47,6 +48,29 @@ header > div.nav-mobil {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 10;
     transition: all 0.3s;
+} */
+
+header > div.nav-mobil {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    right: 0px;
+    background-color: #6A994E;
+    padding: 10px;
+    border-radius: 0 0 8px 8px;
+    z-index: 100;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    visibility: hidden;
+}
+
+header > div.nav-mobil.show {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
 }
 
 header > div.nav-mobil a {
