@@ -163,7 +163,7 @@ main section.parcelas{
     main section.parcelas{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-rows: auto 1fr auto;
         grid-template-areas: 
             "ctit cimg"
             "ctext cimg"
@@ -175,7 +175,7 @@ main section.parcelas{
     main section.lacasilla{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-rows: auto 1fr auto;
         grid-template-areas: 
             "cimg ctit"
             "cimg ctext"

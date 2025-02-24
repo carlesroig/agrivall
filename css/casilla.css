@@ -168,13 +168,12 @@ main section.reserva div.form button.btn {
     cursor: pointer;
     font-size: 1rem;
     transition: all 0.3s;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
 main section.reserva div.form button.btn:hover {
     background-color: #6A994E;
 }
-
-
 
 .calendario {
     width: 100%;
@@ -182,4 +181,64 @@ main section.reserva div.form button.btn:hover {
     aspect-ratio: 3/2;
     margin-top: 20px;
     object-fit: cover;
+}
+
+@media (width >= 768px) {
+
+    main section.descripcion{
+        padding: 1rem 10% 3rem 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "desctit desctit"
+            "descdiv descimg";
+        gap: 2rem;
+    }
+
+    main section.descripcion > h2 {
+        grid-area: desctit;
+    }
+
+    main section.descripcion > img {
+        grid-area: descimg;
+        margin-top: 0;
+    }
+
+    main section.descripcion > div.desc {
+        grid-area: descdiv;
+    }
+
+    main section.reserva{
+        padding: 3rem 10%;
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        grid-template-areas:
+            "resetit resetit"
+            "resep resep"
+            "resefrm reseform";
+        column-gap: 2rem;
+    }
+
+    main section.reserva > h2{
+        grid-area: resetit;
+    }
+
+    main section.reserva > p{
+        grid-area: resep;
+    }
+
+    main section.reserva > iframe{
+        grid-area: resefrm;
+        align-self: center;
+    }
+
+    main section.reserva > div.form{
+        grid-area: reseform;
+    }
+
+    main section.reserva div.form  div.input-group textarea{
+        min-width: 100%;
+        max-width: fit-content;
+    }
+
 }
