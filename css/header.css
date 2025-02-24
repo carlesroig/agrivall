@@ -1,4 +1,4 @@
-header{
+header {
     display: flex;
     flex-flow: row nowrap;
     background-color: #6A994E;
@@ -8,57 +8,79 @@ header{
     align-items: center;
 }
 
-header > a > div{
+header > a > div {
     display: flex;
     align-items: center;
     gap: 5px;
     color: black;
 }
 
-header > a > div > img{
-        width: 40px;
-        height: 40px;
-    }
+header > a > div > img {
+    width: 40px;
+    height: 40px;
+}
 
-header > div > nav{
+header > div.nav-og > nav {
     display: none;
     color: black;
 }
 
-header > div > div{
+header > div.nav-og > div {
     border-radius: 50%;
     transition: all 0.3s;
+    cursor: pointer;
 }
 
-header > div > div:hover{
+header > div.nav-og > div:hover {
     color: #D32F2F;
 }
 
-@media (min-width: 768px) {
+header > div.nav-mobil {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    background-color: #6A994E;
+    padding: 10px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    transition: all 0.3s;
+}
 
-    header > a > div > img{
-        width: 40px;
-        height: 40px;
-    }
-    
-    header > div > div{
+header > div.nav-mobil a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: larger;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+header > div.nav-mobil a:last-child {
+    border-bottom: none;
+}
+
+@media (min-width: 768px) {
+    header > div.nav-og > div {
         display: none;
     }
-
-    header > div > nav{
+    header > div.nav-og > nav {
         display: flex;
         gap: 1rem;
     }
-
-    header a{
+    header a {
         color: black;
         text-decoration: none;
         transition: all 0.3s;
     }
-
-    header > div > nav > a:hover{
+    header > div.nav-og > nav > a:hover {
         color: #791e1e;
         font-weight: 600;
         transform: scale(1.1);
+    }
+    header > div.nav-mobil {
+        display: none !important;
     }
 }
