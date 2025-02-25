@@ -129,6 +129,7 @@ main section.form div.form-container button {
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    transition: all 0.3s;
 }
 
 main section.form div.form-container button:hover {
