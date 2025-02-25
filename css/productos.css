@@ -2,10 +2,324 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
+*{ 
+  margin: 0; padding: 0; 
   box-sizing: border-box;
-  font-family: "Roboto", Arial, sans-serif;
+  text-decoration: none; 
 }
 
+:root{
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+main section p.btn{
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #D32F2F;
+  justify-self: center;
+  color: white;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+main section p.btn:hover{
+  background-color: #6A994E;
+}
+
+main section.hero{
+  height: 25rem;
+  background-image: url("../images/cereza.jpg");
+  align-content: center;
+  background-attachment: fixed;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+main section.hero div.texto{
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px 0;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  text-shadow: 
+        -1px -1px 0 black,  
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+}
+
+main section.hero div.texto h1{
+  font-size: 2rem;
+  padding: 0 2rem;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+main section.hero div.texto p{
+  padding: 0 1rem;
+}
+
+main section.hero div.texto a{
+  width: fit-content;
+  align-self: center;
+  text-shadow: none;
+}
+
+main section.hero div.texto p.btn{
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #D32F2F;
+  width: fit-content;
+  justify-self: center;
+  color: white;
+  transition: all 0.3s;
+}
+
+main section.hero div.texto p.btn:hover{
+  background-color: #6A994E;
+}
+
+main section img{
+  width: 100%;
+  border-radius: 8px;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}
+
+main section.cultivos{
+  background-color: #6A994E;
+  padding: 20px 15px;
+}
+
+main section.cultivos h2{
+  padding-top: 10px;
+  font-family: 'Poppins',Arial, Helvetica, sans-serif;
+}
+
+main section.cultivos article.product-card{
+  text-align: justify;
+  padding: 10px;
+  text-align: left;
+  margin-top: 2rem;
+  border-radius: 8px;
+  transition: all 0.3s;
+  background-color: white;
+}
+
+main section.cultivos article.product-card:hover{
+  transform: scale(1.02);
+}
+
+main section.cultivos article.product-card h3{
+  margin-top: 10px;
+}
+
+main section.cultivos article.product-card p.btn{
+  width: 50%;
+}
+
+main section.cultivos article.product-card p{
+  margin-top: 1rem;
+}
+
+main section.hierbas{
+  background-color: #7f7f5b;
+  padding: 20px 15px;
+}
+
+main section.hierbas h2{
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+main section.hierbas article.hierbas-carr{
+  text-align: justify;
+  padding: 10px;
+  text-align: left;
+  margin-top: 2rem;
+  border-radius: 8px;
+  transition: all 0.3s;
+  background-color: #6a994e;
+}
+
+main section.hierbas article.hierbas-carr p{
+  margin-top: 1rem;
+}
+
+main section.hierbas > h3{
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+main section.hierbas > p{
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.hierbas-carr img,
+.hierbas-carr h3,
+.hierbas-carr p {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.hierbas-carr.fade {
+    opacity: 0;
+}
+
+.pc{
+  display: none;
+}
+
+@media (min-width: 768px) {
+
+.mobil{
+  display: none;
+}
+
+main{
+  background-color: #6A994E;
+}
+
+main section.cultivos-pc{
+
+  background-color: #D32F2F;
+  background-position: center;
+  background-size: cover;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+
+}
+
+main section.cultivos-pc.cerezas{
+  background-image: url('../images/cerezas.jpg');
+}
+
+main section.cultivos-pc.albaricoques{
+  background-image: url('../images/albaricoque.jpg');
+  grid-template-areas: "albimg albart";
+  grid-template-columns: 1fr 1.5fr;
+  margin-top: 2rem;
+}
+
+main section.cultivos-pc article{
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 650px;
+}
+
+main section.cultivos-pc.cerezas article{
+  background-color: #FFCBCB;
+}
+
+main section.cultivos-pc.albaricoques article{
+  background-color: #FFBE74;
+  grid-area: albart;
+  justify-self: right;
+}
+
+main section.cultivos-pc article h2{
+  font-size: 2.5rem;
+}
+
+main section.cultivos-pc article h3{
+  font-size: 1.5rem;
+}
+
+main section.cultivos-pc article ul{
+  list-style: none;
+  margin-left: 1rem;
+}
+
+main section.cultivos-pc article ul li{
+  margin-top: 0.5rem;
+}
+
+main section.cultivos-pc article p.btn{
+  width: 50%;
+}
+
+main section.cultivos-pc div{
+  text-align: right;
+  align-self: end;
+}
+
+main section.cultivos-pc.albaricoques div{
+  text-align: left;
+}
+
+main section.cultivos-pc div img{
+  width: 150px;
+}
+
+main section.cultivos-pc.albaricoques div img{
+  grid-area: albimg;
+}
+
+main section.hierbas{
+  padding: 3rem 10%;
+}
+
+main section.hierbas > h2.titulo {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+main section.hierbas article.hierbas-carr{
+  
+  background-color: #6a994e;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  column-gap: 2rem;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.30);
+}
+
+main section.hierbas article img{
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.30);
+  align-self: center;
+}
+
+main section.hierbas article.hierbas-carr div{
+  align-self: center;
+  padding: 0 2rem;
+}
+
+main section.hierbas article h3{
+  font-size: 2rem;
+  text-align: center;
+}
+
+main section.hierbas article p{
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+main section.hierbas p.btn{
+  width: 50%;
+  font-size: 1.5rem;
+}
+
+main section.hierbas > h3{
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+main section.hierbas > p{
+  font-size: 1.5rem;
+}
+
+}
