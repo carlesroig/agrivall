@@ -2,21 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-@keyframes cambiarFondo {
-    0%, 20%, 100% { opacity: 1; background-image: url(../images/casilla.jpg); }
-    25%, 40% { opacity: 1; background-image: url(../images/fachada.jpg); }
-    45%, 60% { opacity: 1; background-image: url(../images/103092086.jpg); }
-    65%, 80% { opacity: 1; background-image: url(../images/367231749.jpg); }
-    85%, 95% { opacity: 1; background-image: url(../images/447046025.jpg); }
-}
-
-/* 0%, 19% { background-image: url(../images/casilla.jpg); }
-    20%, 39% { background-image: url(../images/103092004.jpg); }
-    40% { background-image: url(../images/103092086.jpg); }
-    60% { background-image: url(../images/367231749.jpg); }
-    80% { background-image: url(../images/447046025.jpg); }
-    100% { background-image: url(../images/fachada.jpg); } */
-
 *{ 
     margin: 0; padding: 0; 
     box-sizing: border-box;
@@ -104,12 +89,9 @@ main section.reserva{
     background-color: #E1E1E1;
 }
 
-main section.reserva img{
+main section.reserva iframe{
     width: 100%;
-    border-radius: 8px;
-    aspect-ratio: 3/2;
-    margin-top: 20px;
-    object-fit: cover;
+    border: none;
 }
 
 main section.form {
