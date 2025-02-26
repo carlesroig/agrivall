@@ -160,12 +160,12 @@ main section.casilla>p{
     margin-bottom: 10px;
 }
 
-main section.publi{
+main section.publicaciones{
     background-color: #FFF8E1;
     padding: 20px 15px;
 }
 
-main section.publi div.post-card{
+main section.publicaciones div.post-card{
     text-align: justify;
     padding: 10px;
     margin: 10px 0 20px 0;
@@ -175,16 +175,16 @@ main section.publi div.post-card{
     transition: all 0.3s;
 }
 
-main section.publi div.post-card:hover{
+main section.publicaciones div.post-card:hover{
     transform: scale(1.02);
 }
 
-main section.publi div.post-card h3{
+main section.publicaciones div.post-card h3{
     margin-top: 0.5rem;
     font-size: 1rem;
 }
 
-main section.publi div.post-card p{
+main section.publicaciones div.post-card p{
     color: #525252;
     margin-top: 0.5rem;
 }
@@ -289,7 +289,7 @@ main section.publi div.post-card p{
         justify-self: right;
     }
 
-    main section.publi{
+    main section.publicaciones{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
@@ -298,40 +298,40 @@ main section.publi div.post-card p{
         padding: 2rem 10%;
     }
 
-    main section.publi > h2{
+    main section.publicaciones > h2{
         grid-area: putit;
         text-align: center;
     }
 
-    main section.publi div.post-card{
+    main section.publicaciones div.post-card{
         background-color: white;
         margin: 2rem 5%;
         padding: 0;
     }
 
-    main section.publi div.post-card h3{
+    main section.publicaciones div.post-card h3{
         padding: 0 1rem;
     }
 
-    main section.publi div.post-card img{
+    main section.publicaciones div.post-card img{
         border-radius: 8px 8px 0 0;
     }
 
-    main section.publi div.post-card p{
+    main section.publicaciones div.post-card p{
         padding: 0 0 1rem 1rem;
     }
 
 
-    main section.publi div.post-card#blog1{
+    main section.publicaciones div.post-card#blog1{
         grid-area: blog1;
     }
 
-    main section.publi div.post-card#blog2{
+    main section.publicaciones div.post-card#blog2{
         grid-area: blog2;
     }
 
 
-    main section.publi div.post-card p{
+    main section.publicaciones div.post-card p{
         color: #525252;
         margin-top: 0.5rem;
     }
